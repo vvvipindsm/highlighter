@@ -80,7 +80,7 @@ class App extends React.Component {
                 else{
                   ObjectsKeys2.forEach(items1 => {
                     if(typeof TempData[ObjKey][items][items1] == 'string' || typeof TempData[ObjKey][items][items1] == 'number' ) {
-                      rows.push(<td className={(this.findValueType(TTempData[ObjKey][items][items1] )=="exlusion")?"red":"green"}>{TempData[ObjKey][items][items1]}</td>)
+                      rows.push(<td className={(this.findValueType(TempData[ObjKey][items][items1] )=="exlusion")?"red":"green"}>{TempData[ObjKey][items][items1]}</td>)
                     }
                     else if(typeof TempData[ObjKey][items][items1] == 'array'){
                       rows.push(<td>{TempData[ObjKey][items][items1].join(',')}</td>)
